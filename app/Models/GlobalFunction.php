@@ -63,6 +63,7 @@ class GlobalFunction extends Model
             'message' => [
                 'topic' => env('NOTIFICATION_TOPIC') . '_android',
                 'data' => $notificationArray,
+                'notification' => $notificationArray,
                 'apns' => [
                     'payload' => [
                         'aps' => ['sound' => 'default']
